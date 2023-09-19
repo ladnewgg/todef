@@ -10,7 +10,6 @@ PROP = 4
 RESULT_SHAPE = int(SHAPE/PROP)
 
 
-
 def keep_only_alpha(image):
 	tmp = np.zeros((SHAPE,SHAPE))
 	for i in range(SHAPE):
@@ -35,11 +34,7 @@ def convert_to_matrix(image):
 
 
 
-
-def main():
-	basicmap = keep_only_alpha(basicmap)
-	result = convert_to_matrix(basicmap)
-	pyplot.imshow(result)
-	pyplot.show()
-
-main()
+basicmap = keep_only_alpha(basicmap)
+result = convert_to_matrix(basicmap)
+pyplot.imshow(result)
+pyplot.show()
