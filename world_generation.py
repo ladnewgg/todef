@@ -2,7 +2,7 @@
 import numpy as np
 from matplotlib import image
 from matplotlib import pyplot
-basicmap = image.imread('noiseTexture.png')
+basicmap = image.imread('assets/noiseTexture.png')
 
 #CONSTS
 SHAPE = basicmap.shape[0]
@@ -33,8 +33,8 @@ def convert_to_matrix(image):
 	return result
 
 
-
-basicmap = keep_only_alpha(basicmap)
-result = convert_to_matrix(basicmap)
-pyplot.imshow(result)
-pyplot.show()
+if __name__ == "__main__" :
+	basicmap = keep_only_alpha(basicmap)
+	result = convert_to_matrix(basicmap)
+	pyplot.imshow(result)
+	pyplot.show()

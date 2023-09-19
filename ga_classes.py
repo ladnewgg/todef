@@ -20,6 +20,11 @@ class Map :
 				print(symbols[j], end = '')
 			print()
 
+	def convert_numbers(self) :
+		for i in  range(self.length) :
+			for j in range(self.width) :
+				self.grid[i][j] = Terrain(self.grid[i][j])
+
 	def firstmap(self) :
 		self.width = self.length = 10
 		self.grid = [[T.MOUNTAIN for i in range(self.length)],

@@ -3,8 +3,9 @@ from ga_classes import Map
 from ga_classes import Terrain
 from pygame.locals import *
 import time
+import random
 
-board = Map((20, 20))
+board = Map((5, 5))
 board.basicmap(0, 0)
 # Grid :
 GRID_X = 0
